@@ -1,0 +1,12 @@
+spring:
+  application:
+    name: Service-Discovery
+  zipkin:
+    base-url: http://127.0.0.1:9411/zipkin/
+server:
+  port: 8761
+
+eureka:
+  client:
+    register-with-eureka: false
+    fetch-registry: false

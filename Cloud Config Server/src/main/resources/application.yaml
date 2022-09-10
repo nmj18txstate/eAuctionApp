@@ -1,0 +1,23 @@
+server:
+  port: 9293
+
+spring:
+  application:
+    name: Config-Server
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/jamie-codez/conf-server.git
+            clone-on-start: true
+  zipkin:
+    base-url: http://127.0.0.1:9411/
+
+#eureka:
+#  client:
+#    register-with-eureka: true
+#    fetch-registry: true
+#    service-url:
+#      defaultZone: http://localhost:8761/eureka/
+#  instance:
+#    hostname: localhost
